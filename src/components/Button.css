@@ -1,17 +1,17 @@
 .btn-wrapper {
-    height: 2.5em;
+    height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: lighter;
     font-size: 1.4em;
-    background-color: #eee;
-    color: #272727;
+    background-color: #FFF;
+    color: #2F3440;
     flex: 1;
     outline: 1px solid #272727;
 }
 
 .operator {
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #EC9770;
+    color: #2F3440;
 }

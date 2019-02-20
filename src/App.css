@@ -4,11 +4,13 @@
   align-items: center;
   height: 100vh;
   width: 100%;
+  background-color: #eee;
 }
 
 .calculator-wrapper {
-  width: 40%;
-  height: 80%;
+  width: 80%;
+  max-width: 300px;
+  height: calc(50vh + 150px);
 }
 
 .row {

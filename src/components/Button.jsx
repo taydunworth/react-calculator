@@ -5,6 +5,10 @@ const isOperator = val => {
     return !isNaN(val) || val === "." || val === "=";
 }
 
+const handleMultiply = val => {
+    return val === "x" ? val === "*" : false;
+}
+
 export const Button = props => (
     <div className={`btn-wrapper ${
         isOperator(props.children) ? null : "operator"

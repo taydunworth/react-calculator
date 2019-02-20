@@ -48,6 +48,7 @@ class App extends Component {
             <Button handleClick={this.addToInput}>0</Button>
             <Button handleClick={this.addToInput}>.</Button>
             <Button handleClick={() => this.handleEqual()}>=</Button>
+            <Button handleClick={this.addToInput}>&divide;</Button>
           </div>
           <div className="row">
             <ClearButton handleClear={() => this.setState({input: ""})}>Clear</ClearButton>
