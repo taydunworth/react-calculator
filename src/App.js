@@ -21,6 +21,12 @@ class App extends Component {
     this.setState({ input: math.eval(this.state.input) });
   }
 
+  handleMultiply = val => {
+    if (val === "x") {
+      this.setState({input: this.state.input + val.replace("x", "*")});
+    }
+}
+
   render() {
     return (
       <div className="app">
@@ -30,7 +36,7 @@ class App extends Component {
             <Button handleClick={this.addToInput}>7</Button>
             <Button handleClick={this.addToInput}>8</Button>
             <Button handleClick={this.addToInput}>9</Button>
-            <Button handleClick={this.addToInput}>x</Button>
+            <Button handleClick={this.handleMultiply}>x</Button>
           </div>
           <div className="row">
             <Button handleClick={this.addToInput}>4</Button>
@@ -48,7 +54,7 @@ class App extends Component {
             <Button handleClick={this.addToInput}>0</Button>
             <Button handleClick={this.addToInput}>.</Button>
             <Button handleClick={() => this.handleEqual()}>=</Button>
-            <Button handleClick={this.addToInput}>&divide;</Button>
+            <Button handleClick={this.addToInput}>/</Button>
           </div>
           <div className="row">
             <ClearButton handleClear={() => this.setState({input: ""})}>Clear</ClearButton>
